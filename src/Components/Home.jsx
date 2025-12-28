@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Experience/>
             <Education/>
-            <Contact/>
+            <Contact/>  
         </div>
     );
 };

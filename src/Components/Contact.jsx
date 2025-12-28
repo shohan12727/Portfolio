@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import ParticlesBackground from "./Common/ParticlesBackground";
 
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -58,14 +59,18 @@ const Contact = () => {
   ];
 
   return (
-    <section className="relative py-16 px-4 md:px-8 bg-gradient-to-br from-slate-50 to-slate-100">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-16 px-4 md:px-8 min-h-screen overflow-hidden grid-bg">
+      {/* Particles */}
+      {/* <ParticlesBackground /> */}
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div data-aos="fade-down" className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1F3A5F] mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 bg-gradient-to-r from-[#1F3A5F] via-blue-600 to-orange-500 bg-clip-text text-transparent">
             Contact Me
           </h2>
-          <p className="text-gray-600 max-w-xl mx-auto">
+          <p className="text-black-300 max-w-xl mx-auto">
             Let’s build something amazing together. Drop a message and I’ll
             respond as soon as possible.
           </p>
@@ -75,7 +80,7 @@ const Contact = () => {
           {/* Form */}
           <div
             data-aos="fade-right"
-            className="bg-white rounded-2xl shadow-xl p-6 md:p-8"
+            className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-6 md:p-8"
           >
             <h3 className="text-2xl font-semibold mb-6 text-gray-800">
               Send Message
@@ -177,7 +182,7 @@ const Contact = () => {
                 <div
                   key={i}
                   data-aos="fade-left"
-                  className="flex items-center gap-4 bg-white p-5 rounded-xl shadow"
+                  className="flex items-center gap-4 bg-white/90 backdrop-blur-md p-5 rounded-xl shadow"
                 >
                   <div className="p-3 rounded-lg bg-[#1F3A5F] text-white">
                     {item.icon}
@@ -208,13 +213,11 @@ const Contact = () => {
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2780.233851164096!2d90.426834!3d23.820446999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDQ5JzEzLjYiTiA5MMKwMjUnMzYuNiJF!5e1!3m2!1sen!2sbd!4v1766916062958!5m2!1sen!2sbd"
-                width="600"
-                height="450"
-                style={{ border: 0 }}
-                allowfullscreen=""
+                className="w-full h-full border-0"
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
