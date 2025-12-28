@@ -54,7 +54,7 @@ const Banner = () => {
             data-aos="fade-right"
             data-aos-delay="200"
           >
-            Full Stack Web Developer<span className="animate-pulse">|</span>
+            Full Stack  Developer<span className="animate-pulse">|</span>
           </h2>
 
           <p
