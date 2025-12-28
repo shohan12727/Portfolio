@@ -1,14 +1,18 @@
 import Navbar from "../Components/Navbar";
 import { Outlet } from "react-router";
 import Footer from "../Components/Footer";
+import TopScroll from "../Components/Common/TopScroll";
+import ScrollToTopButton from "../Components/Common/ScrollToTopButton";
 
 const Root = () => {
   return (
-    <div>
+    <>
+      <TopScroll />
       <Navbar />
       <Outlet />
       <Footer />
-    </div>
+      <ScrollToTopButton />
+    </>
   );
 };
 

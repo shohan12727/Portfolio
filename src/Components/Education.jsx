@@ -64,7 +64,7 @@ const Education = () => {
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         {/* Header */}
         <div data-aos="fade-right" className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-900 via-blue-600 to-orange-500 bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#1F3A5F] via-blue-600 to-orange-500 bg-clip-text text-transparent mb-4">
             Educational Journey
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -136,9 +136,9 @@ const Education = () => {
                 <div className="pb-14 flex-1">
                   <div
                     data-aos="zoom-in-left"
-                    className="bg-white/80 backdrop-blur rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 
+                    className=" backdrop-blur rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100  bg-[#f9f7f1]
            transition-transform  duration-300 ease-in-out 
-          hover:shadow-2xl"
+          hover:shadow-xl"
                   >
                     <span
                       className={`inline-block px-3 py-1 text-xs font-semibold rounded-full mb-4 ${status.badge}`}
@@ -150,7 +150,7 @@ const Education = () => {
                       {item.degree}
                     </h3>
 
-                    <p className="text-blue-600 font-semibold text-lg mb-3">
+                    <p className="text-[#1F2933] font-semibold text-lg mb-3">
                       {item.institution}
                     </p>
 

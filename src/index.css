@@ -1,28 +1,28 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
 /* DaisyUI Light Theme */
 @plugin "daisyui" {
   themes: light --default, dark;
 }
+:root {
+  --color-primary: #1F3A5F;       
 
+}
 
 /* grid background  */
 
 /* Apply grid background ONLY in light theme */
 /* [data-theme="light"] */
 .grid-bg {
-  background-image: 
-    linear-gradient(#ddd 1px, transparent 1px),
+  background-image: linear-gradient(#ddd 1px, transparent 1px),
     linear-gradient(90deg, #ddd 1px, transparent 1px);
   background-size: 40px 40px;
-
 }
 
-[data-theme="light"]  .dotted-bg{
+[data-theme="light"] .dotted-bg {
   background-image: radial-gradient(circle, #ddd 2px, transparent 2px);
-background-size: 30px 30px;
+  background-size: 30px 30px;
 }
 
 /* Remove background in dark theme */
@@ -30,6 +30,10 @@ background-size: 30px 30px;
   background-image: none;
 }
 
+/* readable hex color 
+#e5e7eb
+#f9f7f1 */
+/* primary color : #1F3A5F */
 
 /* bg -collection  */
 /* 
