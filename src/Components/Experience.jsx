@@ -71,7 +71,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="px-6 py-6 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+    <section className="px-6 py-6 dotted-bg">
       <div className="max-w-5xl mx-auto">
         <div 
           data-aos="fade-down" 
