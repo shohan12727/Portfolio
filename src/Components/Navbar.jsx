@@ -5,6 +5,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -16,16 +17,17 @@ const Navbar = () => {
   ];
 
   const navLinkClasses = ({ isActive }) =>
-    `relative px-3 py-2 text-sm lg:text-base font-medium transition-colors duration-300 group
-     ${isActive ? "text-[#FF6A00]" : "text-black hover:text-primary-600"}`;
+    `relative px-3 py-2  lg:text-base font-medium transition-colors duration-300 group
+     ${isActive ? "text-[#FF6A00]" : "text-white hover:text-primary-600"}`;
 
   return (
-    <nav className="bg-white shadow-lg  w-full">
+    <nav className="bg-primary shadow-lg sticky top-0 z-50
+ w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
+        <div className="flex justify-between items-center h-14 sm:h-16 md:h-17">
           {/* Logo */}
           <Link to="/" className="shrink-0">
-            <img src={logo} alt="Logo" className="w-18 h-25" />
+            <img src={logo} alt="Logo" className="w-18 h-22" />
           </Link>
 
           {/* Desktop Nav */}
