@@ -43,7 +43,7 @@ const Education = () => {
     {
       degree: "Higher Secondary Certificate (HSC)",
       institution: "Govt. Rajendra College",
-      result: "GPA-5",
+      result: "GPA-5.00",
       duration: "2022 – 2023",
       description:
         "Science background with Mathematics, Physics and Chemistry major.",
@@ -52,7 +52,7 @@ const Education = () => {
     {
       degree: "Secondary School Certificate (SSC)",
       institution: "Boalmari George Academy",
-      result: "GPA-5",
+      result: "GPA-5.00",
       duration: "2016 – 2018",
       description: "Science background.",
       status: "completed",
