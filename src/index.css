@@ -11,7 +11,8 @@
 /* grid background  */
 
 /* Apply grid background ONLY in light theme */
-[data-theme="light"] .grid-bg {
+/* [data-theme="light"] */
+.grid-bg {
   background-image: 
     linear-gradient(#ddd 1px, transparent 1px),
     linear-gradient(90deg, #ddd 1px, transparent 1px);
