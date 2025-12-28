@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const navLinkClasses = ({ isActive }) =>
     `relative px-3 py-2 text-sm lg:text-base font-medium transition-colors duration-300 group
-     ${isActive ? "text-[#FF6A00]" : "text-gray-700 hover:text-primary-600"}`;
+     ${isActive ? "text-[#FF6A00]" : "text-black hover:text-primary-600"}`;
 
   return (
     <nav className="bg-white shadow-lg  w-full">
@@ -37,7 +37,7 @@ const Navbar = () => {
                 className={navLinkClasses}
               >
                 {item.name}
-                <span className="absolute bottom-0 left-0 h-0.5 bg-[#0033CC] transition-all duration-300 w-0 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 h-0.5 bg-[#FF6A00] transition-all duration-300 w-0 group-hover:w-full" />
               </NavLink>
             ))}
           </div>
