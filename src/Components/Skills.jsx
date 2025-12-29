@@ -66,11 +66,8 @@ export default function Skills() {
           className="text-center space-y-3 md:space-y-4"
           data-aos="fade-down"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-            My{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              Skills
-            </span>
+          <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold  bg-linear-to-r from-[#1F3A5F] via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+            My Skills
           </h1>
 
           <p

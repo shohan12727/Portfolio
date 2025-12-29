@@ -60,8 +60,8 @@ const Education = () => {
   ];
 
   return (
-    <section className="min-h-screen grid-bg py-10">
-      <div className="max-w-5xl mx-auto px-6 md:px-10">
+    <section className="min-h-screen grid-bg py-10 overflow-x-hidden">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Header */}
         <div data-aos="fade-right" className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold bg-linear-to-r from-[#1F3A5F] via-cyan-600 to-orange-500 bg-clip-text text-transparent mb-4">
@@ -73,7 +73,7 @@ const Education = () => {
         </div>
 
         {/* Timeline */}
-        <div className="relative">
+        <div className="relative w-full overflow-hidden">
           {educationData.map((item, index) => {
             const status = STATUS_STYLES[item.status];
 
@@ -82,14 +82,14 @@ const Education = () => {
                 key={`${item.degree}-${index}`}
                 data-aos="fade-up"
                 data-aos-delay={index * 120}
-                className="flex group"
+                className="flex w-full group overflow-hidden"
               >
                 {/* Indicator */}
-                <div className="flex flex-col items-center mr-8 md:mr-12">
+                <div className="flex flex-col items-center mr-4 md:mr-12 shrink-0">
                   <div
                     className={`w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-lg 
-              transition-transform duration-300 ease-in-out 
-              group-hover:scale-110 ${status.circle}`}
+                    transition-transform duration-300 ease-in-out 
+                    group-hover:scale-110 ${status.circle}`}
                   >
                     {item.status === "current" ? (
                       <svg
@@ -133,12 +133,11 @@ const Education = () => {
                 </div>
 
                 {/* Card */}
-                <div className="pb-14 flex-1">
+                <div className="pb-14 flex-1 min-w-0">
                   <div
                     data-aos="zoom-in-left"
-                    className=" backdrop-blur rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100  bg-[#f9f7f1]
-           transition-transform  duration-300 ease-in-out 
-          hover:shadow-xl"
+                    className="backdrop-blur rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 bg-[#f9f7f1]
+                    transition-shadow duration-300 ease-in-out hover:shadow-xl"
                   >
                     <span
                       className={`inline-block px-3 py-1 text-xs font-semibold rounded-full mb-4 ${status.badge}`}
