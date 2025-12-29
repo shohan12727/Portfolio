@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition"
+              className="p-2 rounded-md text-white hover:text-blue-600 hover:bg-gray-100 transition"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -63,7 +63,7 @@ const Navbar = () => {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-white border-t border-gray-200 shadow-lg">
+        <div className="bg-primary  border-t border-gray-200 shadow-lg">
           <div className="px-4 py-3 space-y-1 max-w-7xl mx-auto">
             {navItems.map((item) => (
               <NavLink
@@ -71,11 +71,11 @@ const Navbar = () => {
                 to={item.path}
                 onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
-                  `block px-4 py-3 rounded-md text-base sm:text-lg font-medium transition-colors duration-200
+                  `block px-4 py-3 rounded-md text-white sm:text-lg font-medium transition-colors duration-200
                   ${
                     isActive
-                      ? "text-primary bg-gray-100"
-                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                      ? " bg-[#16263F] "
+                      : "text-gray-700"
                   }`
                 }
               >

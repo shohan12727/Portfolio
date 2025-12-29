@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub,  FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaFacebookF } from "react-icons/fa";
 import profileImg from "../assets/my_profile.png";
 import { Link } from "react-router";
 import { useEffect } from "react";
@@ -17,7 +17,7 @@ const Banner = () => {
 
   return (
     <section className="bg-primary py-20">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* IMAGE */}
         <div
           className="flex justify-center lg:justify-end order-1 lg:order-2"
@@ -39,8 +39,7 @@ const Banner = () => {
           className="order-2 lg:order-1 text-center lg:text-left"
           data-aos="fade-right"
         >
-          <p className="text-white text-lg mb-2">Hello! I am,</p>
-
+         
           <h1
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
             data-aos="fade-right"
@@ -54,7 +53,7 @@ const Banner = () => {
             data-aos="fade-right"
             data-aos-delay="200"
           >
-            Full Stack  Developer<span className="animate-pulse">|</span>
+            Full Stack Developer<span className="animate-pulse">|</span>
           </h2>
 
           <p
@@ -62,8 +61,7 @@ const Banner = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            I build modern web applications with a focus on performance,
-            security, accessibility, and great user experience.
+          I am a student at North South University, studying Electrical and Electronic Engineering (EEE). An enthusiastic and curious individual, I enjoy tackling challenging problems and finding solutions to unsolved puzzles.
           </p>
 
           {/* SOCIAL ICONS */}
@@ -112,10 +110,10 @@ const Banner = () => {
             data-aos-delay="500"
           >
             <Link
-              to="/contact"
+              to="/projects"
               className="px-6 py-3 rounded-md bg-cyan-500 text-white font-medium hover:bg-cyan-600 transition"
             >
-              Contact Me
+             Projects
             </Link>
 
             <Link

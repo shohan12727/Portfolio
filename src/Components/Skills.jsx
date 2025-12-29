@@ -8,6 +8,7 @@ import pythonIcon from "../assets/skills/python.png";
 import expressIcon from "../assets/skills/express.png";
 import tailwindIcon from "../assets/skills/tailwind.png";
 import javascriptIcon from "../assets/skills/javascript.png";
+import typescriptIcon from "../assets/skills/typescript.png";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
@@ -41,14 +42,15 @@ export default function Skills() {
 
   const skills = [
     { name: "React", icon: reactIcon, angle: 0 },
-    { name: "Next.js", icon: nextIcon, angle: 40 },
-    { name: "Node.js", icon: nodeIcon, angle: 80 },
-    { name: "MongoDB", icon: mongoIcon, angle: 120 },
-    { name: "Firebase", icon: firebaseIcon, angle: 160 },
-    { name: "Python", icon: pythonIcon, angle: 200 },
-    { name: "Express", icon: expressIcon, angle: 240 },
-    { name: "Tailwind", icon: tailwindIcon, angle: 280 },
-    { name: "Javascript", icon: javascriptIcon, angle: 320 },
+    { name: "Next.js", icon: nextIcon, angle: 36 },
+    { name: "Node.js", icon: nodeIcon, angle: 72 },
+    { name: "MongoDB", icon: mongoIcon, angle: 108 },
+    { name: "Firebase", icon: firebaseIcon, angle: 144 },
+    { name: "Python", icon: pythonIcon, angle: 180 },
+    { name: "Express", icon: expressIcon, angle: 216 },
+    { name: "Tailwind", icon: tailwindIcon, angle: 252 },
+    { name: "JavaScript", icon: javascriptIcon, angle: 288 },
+    { name: "TypeScript", icon: typescriptIcon, angle: 324 },
   ];
 
   return (
@@ -59,7 +61,6 @@ export default function Skills() {
 
       {/* 🔹 Content */}
       <div className="relative z-10 w-full max-w-6xl flex flex-col items-center gap-12 md:gap-14">
-        
         {/* 🔹 Header */}
         <div
           className="text-center space-y-3 md:space-y-4"
@@ -152,7 +153,9 @@ export default function Skills() {
                 data-aos="zoom-in"
                 data-aos-delay="500"
               >
-                <span className="text-xs md:text-sm opacity-80">Tech Stack</span>
+                <span className="text-xs md:text-sm opacity-80">
+                  Tech Stack
+                </span>
                 <span className="text-xl md:text-2xl font-bold">Skills</span>
               </div>
             </div>
