@@ -10,14 +10,16 @@
 }
 
 /* Light theme only */
-[data-theme="light"] .grid-bg {
+/* [data-theme="light"]  */
+.grid-bg {
   background-image: 
     linear-gradient(#ddd 1px, transparent 1px),
     linear-gradient(90deg, #ddd 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
-[data-theme="light"] .dotted-bg {
+/* [data-theme="light"]  */
+.dotted-bg {
   background-image: radial-gradient(circle, #ddd 2px, transparent 2px);
   background-size: 30px 30px;
 }

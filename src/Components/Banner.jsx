@@ -16,7 +16,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="bg-linear-to-br from-slate-50 via-blue-50/30 to-slate-50  py-20">
+    <section className="bg-linear-to-br from-slate-50 via-blue-50/30 to-slate-50 py-10 md:py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* IMAGE */}
         <div
@@ -117,7 +117,7 @@ const Banner = () => {
             </Link>
 
             <Link
-              to="/resume.pdf"
+              to="https://docs.google.com/document/d/1CqmXNfjX9RqoWczPwLUSms48yTAJVTD7dyLoYfgzkzY/edit?usp=sharing"
               className="px-6 py-3 rounded-md border border-primary text-primary font-medium hover:bg-primary hover:text-white transition"
             >
               Resume

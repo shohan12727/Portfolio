@@ -66,8 +66,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="relative grid-bg py-8 px-4 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative grid-bg py-8 px-2  overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-8" data-aos="fade-up">
           <h2 className="text-5xl font-bold bg-linear-to-r from-[#1F3A5F] via-cyan-600 to-orange-500 bg-clip-text text-transparent tracking-tight">
