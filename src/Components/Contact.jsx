@@ -67,7 +67,7 @@ const Contact = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div data-aos="fade-down" className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 bg-gradient-to-r from-[#1F3A5F] via-blue-600 to-orange-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 bg-linear-to-r from-[#1F3A5F] via-cyan-600 to-orange-500 bg-clip-text text-transparent">
             Contact Me
           </h2>
           <p className="text-black-300 max-w-xl mx-auto">

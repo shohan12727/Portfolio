@@ -55,11 +55,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="relative bg-linear-to-br from-slate-50 via-blue-50/30 to-slate-50 py-20 px-4 overflow-hidden">
+    <section className="relative grid-bg py-12 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-14" data-aos="fade-up">
-          <h2 className="text-5xl font-bold text-[#1F3A5F] tracking-tight">
+        <div className="text-center mb-8" data-aos="fade-up">
+          <h2 className="text-5xl font-bold bg-linear-to-r from-[#1F3A5F] via-cyan-600 to-orange-500 bg-clip-text text-transparent tracking-tight">
             Featured Projects
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">

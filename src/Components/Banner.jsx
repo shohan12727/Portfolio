@@ -16,7 +16,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className="bg-primary py-20">
+    <section className="bg-linear-to-br from-slate-50 via-blue-50/30 to-slate-50  py-20">
       <div className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* IMAGE */}
         <div
@@ -29,7 +29,7 @@ const Banner = () => {
             className="
               w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72
               rounded-full
-              border-4 border-cyan-400
+              border-4 border-cyan-700
             "
           />
         </div>
@@ -41,7 +41,7 @@ const Banner = () => {
         >
          
           <h1
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold bg-linear-to-r from-[#1F3A5F] via-cyan-600 to-orange-500 bg-clip-text text-transparent mb-4"
             data-aos="fade-right"
             data-aos-delay="100"
           >
@@ -49,7 +49,7 @@ const Banner = () => {
           </h1>
 
           <h2
-            className="text-lg sm:text-xl md:text-2xl font-semibold text-cyan-400 mb-6"
+            className="text-lg sm:text-xl md:text-2xl font-semibold text-primary mb-6"
             data-aos="fade-right"
             data-aos-delay="200"
           >
@@ -57,7 +57,7 @@ const Banner = () => {
           </h2>
 
           <p
-            className="text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8"
+            className="text-gray-800 max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -66,7 +66,7 @@ const Banner = () => {
 
           {/* SOCIAL ICONS */}
           <div
-            className="flex justify-center lg:justify-start gap-4 text-white mb-10"
+            className="flex justify-center lg:justify-start gap-4 text-primary mb-10"
             data-aos="fade-up"
             data-aos-delay="400"
           >
@@ -111,14 +111,14 @@ const Banner = () => {
           >
             <Link
               to="/projects"
-              className="px-6 py-3 rounded-md bg-cyan-500 text-white font-medium hover:bg-cyan-600 transition"
+              className="px-6 py-3 rounded-md bg-primary text-white font-medium hover:bg-[#16283F] transition"
             >
              Projects
             </Link>
 
             <Link
               to="/resume.pdf"
-              className="px-6 py-3 rounded-md border border-cyan-500 text-cyan-400 font-medium hover:bg-cyan-500 hover:text-white transition"
+              className="px-6 py-3 rounded-md border border-primary text-primary font-medium hover:bg-primary hover:text-white transition"
             >
               Resume
             </Link>

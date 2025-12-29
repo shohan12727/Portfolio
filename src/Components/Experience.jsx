@@ -5,14 +5,14 @@ import Aos from "aos";
 
 const Experience = () => {
   useEffect(() => {
-    Aos.init({ 
-      duration: 500, 
-      once: true, 
+    Aos.init({
+      duration: 500,
+      once: true,
       easing: "ease-out-cubic",
-      offset: 100
+      offset: 100,
     });
   }, []);
-  
+
   const experiences = [
     {
       org: "IEEE NSU Student Branch",
@@ -73,12 +73,12 @@ const Experience = () => {
   return (
     <section className="px-6 py-6 dotted-bg">
       <div className="max-w-5xl mx-auto">
-        <div 
-          data-aos="fade-down" 
+        <div
+          data-aos="fade-down"
           data-aos-duration="800"
           className="text-center mb-6"
         >
-          <h2 className="text-4xl bg-gradient-to-r from-[#1F3A5F] via-blue-600 to-orange-500 font-bold bg-clip-text text-transparent mb-2">
+          <h2 className="text-4xl bg-linear-to-r from-[#1F3A5F] via-cyan-600 to-orange-500 bg-clip-text text-transparent font-bold mb-2">
             Experience
           </h2>
           <p className="text-gray-600">
@@ -96,7 +96,7 @@ const Experience = () => {
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
             >
               {/* Organization Header */}
-              <div 
+              <div
                 className="bg-gradient-to-r from-[#1F3A5F] to-[#2c5282] p-6 text-white"
                 data-aos="fade-right"
                 data-aos-delay={idx * 150 + 100}
@@ -160,7 +160,9 @@ const Experience = () => {
                             <span
                               key={sIdx}
                               data-aos="zoom-in"
-                              data-aos-delay={idx * 150 + rIdx * 100 + sIdx * 50 + 300}
+                              data-aos-delay={
+                                idx * 150 + rIdx * 100 + sIdx * 50 + 300
+                              }
                               data-aos-duration="500"
                               className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#1F3A5F]/10 text-[#1F3A5F] border border-[#1F3A5F]/20 hover:bg-[#1F3A5F]/20 transition-colors"
                             >
