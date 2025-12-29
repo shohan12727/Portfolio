@@ -2,44 +2,55 @@ import Aos from "aos";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
+import ticketBari from "../assets/Projects/ticketBari.png";
+import homeNest from "../assets/Projects/homeNest.png";
+import hero from "../assets/Projects/hero.png";
+import { Link } from "react-router";
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Ticket Bari",
     description:
-      "A modern personal portfolio showcasing projects, skills, and experience with smooth animations and responsive design.",
-    tech: ["React", "Tailwind CSS", "AOS"],
-    live: "https://your-live-link.com",
+      "TicketBari is a modern Online Ticket Booking Platform where users can discover and book tickets for Bus, Train, Launch, and Plane.",
+    tech: [
+      "React",
+      "MongoDB",
+      "ExpressJs",
+      "Stripe",
+      "Tanstack Query",
+      "React Hook Form",
+    ],
+    live: "https://ticket-bari-492a4.web.app",
     repos: {
-      client: "https://github.com/your-username/portfolio-client",
-      server: "https://github.com/your-username/portfolio-server",
+      client: "https://github.com/shohan12727/TicketBari-client",
+      server: "https://github.com/shohan12727/TicketBari-server",
     },
-    image: "https://via.placeholder.com/600x400/1F3A5F/ffffff?text=Portfolio",
-    featured: true,
-  },
-  {
-    title: "Gemini AI Chatbot",
-    description:
-      "AI-powered chatbot using Gemini API with Flask backend and a clean frontend interface.",
-    tech: ["React", "Flask", "Python", "Gemini API"],
-    live: "https://your-live-link.com",
-    repos: {
-      client: "https://github.com/your-username/chatbot-client",
-      server: "https://github.com/your-username/chatbot-server",
-    },
-    image: "https://via.placeholder.com/600x400/3B5998/ffffff?text=AI+Chatbot",
+    image: ticketBari,
     featured: false,
   },
   {
-    title: "React CRUD App",
+    title: "Home Nest",
     description:
-      "A full CRUD application with reusable components and clean state management.",
-    tech: ["React", "JavaScript", "Tailwind CSS"],
-    live: "https://your-live-link.com",
+      "HomeNest is a full-stack real estate listing platform where users can browse, search, and manage rental or sale properties. Property owners can securely add, update, and delete listings, while users can explore properties, view details, and leave ratings and reviews.",
+    tech: ["React", "Express", "MongoDB", "Tanstack Query"],
+    live: "https://home-nest-7e180.web.app",
     repos: {
-      client: "https://github.com/your-username/crud-client",
+      client: "https://github.com/shohan12727/Home-Nest-Client",
+      server: "https://github.com/shohan12727/Home-Nest-server",
     },
-    image: "https://via.placeholder.com/600x400/2D5A7B/ffffff?text=CRUD+App",
+    image: homeNest,
+    featured: false,
+  },
+  {
+    title: "Hero App Store",
+    description:
+      "A modern and responsive React-based App Store web application showcasing apps, installation tracking, analytics, and smooth user interaction — built with creativity, performance, and practicality.",
+    tech: ["React", "JavaScript", "React-router"],
+    live: "https://hero-app-store-001.netlify.app/",
+    repos: {
+      client: "https://github.com/shohan12727/Hero-App-Store",
+    },
+    image: hero,
     featured: false,
   },
 ];
@@ -55,7 +66,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="relative grid-bg py-12 px-4 overflow-hidden">
+    <section className="relative grid-bg py-8 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-8" data-aos="fade-up">
@@ -75,7 +86,7 @@ const Projects = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 150}
-              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform flex flex-col"
+              className="group relative bg-[#F9F7F1] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform flex flex-col"
             >
               {/* Featured Badge */}
               {project.featured && (
@@ -96,7 +107,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-103"
                 />
               </div>
 
@@ -184,10 +195,13 @@ const Projects = () => {
 
         {/* View All */}
         <div className="text-center mt-16" data-aos="zoom-in">
-          <button className="inline-flex items-center gap-2 bg-[#1F3A5F] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#152d47] transition-all duration-300 shadow-lg">
+          <Link
+            to="https://github.com/shohan12727"
+            className="inline-flex items-center gap-2 bg-[#1F3A5F] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#152d47] transition-all duration-300 shadow-lg"
+          >
             View All Projects
             <ArrowUpRight size={18} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
