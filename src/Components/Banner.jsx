@@ -117,7 +117,7 @@ const Banner = () => {
             </Link>
 
             <Link
-              to="https://drive.google.com/file/d/1-5qevEizVrQYtjbodUUeGS-PoBxXv9qx/view?usp=sharing"
+              to="https://drive.google.com/file/d/1dv67XFAOpHq2uIChHWEt81CLjtUAWeDs/view?usp=sharing"
               className="px-6 py-3 rounded-md border border-primary text-primary font-medium hover:bg-primary hover:text-white transition"
             >
               Resume
