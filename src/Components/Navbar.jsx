@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: "Projects", path: "/projects" },
     { name: "Skills", path: "/skills" },
     { name: "Contact", path: "/contact" },
-    { name: "Resume", path: "https://drive.google.com/file/d/1dv67XFAOpHq2uIChHWEt81CLjtUAWeDs/view?usp=sharing" },
+    { name: "Resume", path: "https://drive.google.com/file/d/17EsFj26o62do8OOkGbmz-YiRSOd9B9aD/view?usp=sharing" },
   ];
 
   const navLinkClasses = ({ isActive }) =>
